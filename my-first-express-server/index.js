@@ -9,7 +9,7 @@ const app = express();
 
 const SERVER = HTTP.createServer(app);
 
-SERVER.listen(PORT, HOSTNAME, function() {
+SERVER.listen(PORT, HOSTNAME, () => {
     // WE'RE USING THIS CONSOLE.LOG() TO LET US KNOW THE SERVER IS RUNNING
     console.log(`Server is running at http://${HOSTNAME}:${PORT}`)
 });
