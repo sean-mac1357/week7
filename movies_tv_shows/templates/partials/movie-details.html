@@ -1,0 +1,9 @@
+<h1>${movie.Title}</h1>
+<img src='${movie.Poster}' alt='Poster for ${movie.title}'>
+<h4>This ${movie.Type} is about ${movie.Plot}.</h4>
+<p>This ${movie.Type} was directed by ${movie.Director}, and has the following actors: ${movie.Actors}</p>
+<p>It has an Imdb rating of: ${movie.imdbRating}, with ${movie.imdbVotes} votes.</p>
+
+<ul>
+    ${Images.map(Image => `<li style="display: inline-flex; flex-wrap: wrap; align-items: baseline;"><img style="padding: 2px; width: 300px; align-content: center;" src="${Image}" alt="Images of ${movie.Title} "></li>`).join('')}
+</ul>

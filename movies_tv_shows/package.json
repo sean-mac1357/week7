@@ -1,0 +1,18 @@
+{
+  "name": "movies_tv_shows",
+  "version": "1.0.0",
+  "description": "Express App to display a list of Apple CEO's, this is v1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Sean R MacEachern",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-es6-template-engine": "^2.2.3"
+  }
+}

@@ -1,0 +1,4 @@
+<h1>${title}</h1>
+<ul>
+    ${data.map(movie => `<li><a href='./movies/${movie.imdbID}'>${movie.Title}</a> - ${movie.Year}</li>`).join('')}
+</ul>
