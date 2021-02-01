@@ -2,6 +2,8 @@
 
 const HTTP = require('http');
 
+const path = require('path');
+
 const HOSTNAME = '127.0.0.1',
     PORT = 3000
 
@@ -13,6 +15,8 @@ const app = express();
 app.engine('html', es6Renderer);
 app.set('views', 'templates');
 app.set('view engine', 'html');
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 const SERVER = HTTP.createServer(app);
 

@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
         },
         partials: {
             body: "partials/home",
-        },
+        }
     });
 });
 

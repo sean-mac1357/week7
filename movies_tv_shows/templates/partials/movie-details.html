@@ -1,9 +1,19 @@
-<h1>${movie.Title}</h1>
-<img src='${movie.Poster}' alt='Poster for ${movie.title}'>
-<h4>This ${movie.Type} is about ${movie.Plot}.</h4>
-<p>This ${movie.Type} was directed by ${movie.Director}, and has the following actors: ${movie.Actors}</p>
-<p>It has an Imdb rating of: ${movie.imdbRating}, with ${movie.imdbVotes} votes.</p>
+<link rel="stylesheet" href="../styles/stylesheet.css">
 
-<ul>
-    ${Images.map(Image => `<li style="display: inline-flex; flex-wrap: wrap; align-items: baseline;"><img style="padding: 2px; width: 300px; align-content: center;" src="${Image}" alt="Images of ${movie.Title} "></li>`).join('')}
-</ul>
+<div class="details">
+    <div class="container">
+    <h1>${movie.Title}</h1>
+    <p><img src="${movie.Poster.replace('http:', 'https:')}" alt="${movie.Title} poster" /></p>
+    <p>${movie.Year} | ${movie.Rated}</p>
+    <p class="imdb-logo"><img src="../images/IMDbLogo.png"/> :  ${movie.imdbRating}</p>
+    <p><span class="yellow"><strong>Votes</strong></span><br /> ${movie.imdbVotes}</p>
+    <p><span class="yellow"><strong>Release Date</strong></span><br /> ${movie.Released}</p>
+    <p><span class="yellow"><strong>Runtime</strong></span><br /> ${movie.Runtime}</p>
+    <p><span class="yellow"><strong>Genre</strong></span><br /> ${movie.Genre}</p>
+    <p><span class="yellow"><strong>Director</strong></span><br /> ${movie.Director}</p>
+    <p><span class="yellow"><strong>Writer(s)</strong></span><br /> ${movie.Writer}</p>
+    <p><span class="yellow"><strong>Actors</strong></span><br /> ${movie.Actors}</p>
+    <p><span class="yellow"><strong>Awards</strong></span><br /> ${movie.Awards}</p>
+    <p><span class="yellow"><strong>Plot</strong></span><br /> ${movie.Plot}</p>
+    </div>
+</div>

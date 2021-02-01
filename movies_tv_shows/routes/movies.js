@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
     res.render('template', {
         locals: {
             title: 'List of Movies and Tv-Shows',
-            data: moviesModel
+            data: moviesModel,
         },
         partials: {
             body: 'partials/movie-list',
@@ -27,8 +27,6 @@ router.get('/:imdbID', (req, res) => {
             locals: {
                 title: `${movie.Title}'s info`,
                 movie,
-                Images: movie.Images,
-                Poster: movie.Poster,
             },
             partials: {
                 body: 'partials/movie-details',

@@ -1,7 +1,7 @@
 {
   "name": "movies_tv_shows",
   "version": "1.0.0",
-  "description": "Express App to display a list of Apple CEO's, this is v1",
+  "description": "Express App to display a list of Movies and Tv-Shows",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
